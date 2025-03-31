@@ -10,7 +10,7 @@ apt upgrade
 
 # Install necessary background packages/dependencies
 echo "Installing required packages..."
-sudo bash -c 'apt-get -y install npm git gpsd gpsd-clients chrony >/dev/null 2>&1 & disown'
+apt-get -y install npm git gpsd gpsd-clients chrony >/dev/null 2>&1
 
 # Disable USB port power limits
 #echo "Configuring USB port power limits..."
