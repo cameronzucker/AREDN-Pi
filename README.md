@@ -10,8 +10,8 @@ Use the 64-bit Raspbian option. Configure your account username and password, SS
 Boot your Pi, then SSH in.
 
 In your home directory, run:
-<br><code>
-sudo git clone https://github.com/cameronzucker/aredn-pi-setup.git
+<br>
+<code>sudo git clone https://github.com/cameronzucker/aredn-pi-setup.git
 cd aredn-pi-setup
 sudo chmod +x setup-script.bash
 sudo ./setup-script.bash</code>
