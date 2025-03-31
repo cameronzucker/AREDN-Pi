@@ -3,10 +3,10 @@ echo "AREDN Pi 5 Setup Script"
 
 # Pull and install package updates before starting
 echo "Installing updates..."
-apt-get update
-apt-get upgrade -y
-apt update
-apt upgrade
+apt-get update >/dev/null 2>&1
+apt-get upgrade -y >/dev/null 2>&1
+apt update >/dev/null 2>&1
+apt upgrade >/dev/null 2>&1
 
 # Install necessary background packages/dependencies
 echo "Installing required packages..."
@@ -23,7 +23,7 @@ apt-get -y install npm git gpsd gpsd-clients chrony >/dev/null 2>&1
 
 # Install chirp
 echo "Installing CHIRP..."
-apt-get -y install chirp
+apt-get -y install chirp >/dev/null 2>&1
 
 # Install librewolf
 #echo "Installing Librewolf browser..."
