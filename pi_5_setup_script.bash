@@ -32,13 +32,14 @@ apt-get -y install librewolf >/dev/null 2>&1
 # Install patwinlink (additional config needed later)
 echo "Installing PAT Winlink..."
 cd ~
-apt-get install wget libhamlib-utils screen
+apt-get install -y wget libhamlib-utils screen >/dev/null 2>&1
+echo "Pulling PAT .deb package from source..."
 wget https://github.com/la5nta/pat/releases/download/v0.16.0/pat_0.16.0_linux_arm64.deb
-dpkg -i pat_0.16.0_linux_arm64.deb
+dpkg -i pat_0.16.0_linux_arm64.deb >/dev/null 2>&1
 
 # Install docker per official docs: https://docs.docker.com/engine/install/ubuntu/
 "Removing old/conflicting Docker packages..."
-for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get remove $pkg; done
+for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get remove $pkg; done >/dev/null 2>&1
 
 # Add Docker's official GPG key:
 echo "Adding Docker's official GPG key..."
