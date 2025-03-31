@@ -10,6 +10,8 @@ echo "Pulling OS updates..."
 apt update >/dev/null 2>&1
 echo "Upgrading OS..."
 apt upgrade -y >/dev/null 2>&1
+echo "Installing extrepo..."
+apt-get install extrepo -y
 
 # Install necessary background packages/dependencies
 echo "Installing required packages..."
@@ -30,7 +32,8 @@ apt-get -y install chirp >/dev/null 2>&1
 
 # Install librewolf
 echo "Installing Librewolf browser..."
-apt-get -y install librewolf >/dev/null 2>&1
+extrepo enable librewolf
+apt install librewolf -y >/dev/null 2>&1
 
 # Install patwinlink (additional config needed later)
 echo "Installing PAT Winlink..."
