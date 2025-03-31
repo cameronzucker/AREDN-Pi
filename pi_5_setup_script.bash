@@ -32,9 +32,9 @@ apt-get -y install librewolf >/dev/null 2>&1
 # Install patwinlink (additional config needed later)
 echo "Installing PAT Winlink..."
 cd ~
-apt install wget libhamlib-utils screen >/dev/null 2>&1
-wget https://github.com/la5nta/pat/releases/download/v0.16.0/pat_0.16.0_linux_arm64.deb >/dev/null 2>&1
-dpkg -i pat_0.16.0_linux_arm64.deb >/dev/null 2>&1
+apt-get install wget libhamlib-utils screen
+wget https://github.com/la5nta/pat/releases/download/v0.16.0/pat_0.16.0_linux_arm64.deb
+dpkg -i pat_0.16.0_linux_arm64.deb
 
 # Install docker per official docs: https://docs.docker.com/engine/install/ubuntu/
 "Removing old/conflicting Docker packages..."
