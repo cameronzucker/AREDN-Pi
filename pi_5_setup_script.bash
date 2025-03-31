@@ -2,11 +2,14 @@
 echo "AREDN Pi 5 Setup Script"
 
 # Pull and install package updates before starting
-echo "Installing updates..."
-apt-get update
-apt-get upgrade -y
-apt update
-apt upgrade
+echo "Updating system..."
+apt-get update >/dev/null 2>&1
+echo "Upgrading packages..."
+apt-get upgrade -y >/dev/null 2>&1
+echo "Pulling OS updates..."
+apt update >/dev/null 2>&1
+echo "Upgrading OS"
+apt upgrade -y >/dev/null 2>&1
 
 # Install necessary background packages/dependencies
 echo "Installing required packages..."
@@ -43,17 +46,17 @@ for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker c
 
 # Add Docker's official GPG key:
 echo "Adding Docker's official GPG key..."
-apt-get install ca-certificates curl
-install -m 0755 -d /etc/apt/keyrings
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
-chmod a+r /etc/apt/keyrings/docker.asc
+apt-get install ca-certificates curl >/dev/null 2>&1
+install -m 0755 -d /etc/apt/keyrings >/dev/null 2>&1
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc >/dev/null 2>&1
+chmod a+r /etc/apt/keyrings/docker.asc >/dev/null 2>&1
 
 # Add the repository to Apt sources:
 echo "Add the Docker repository to Apt sources..."
 echo \
   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
   $(. /etc/os-release && echo "${UBUNTU_CODENAME:-$VERSION_CODENAME}") stable" | \
-  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null 2>&1
 sudo apt-get update >/dev/null 2>&1
 
 # Install docker components
