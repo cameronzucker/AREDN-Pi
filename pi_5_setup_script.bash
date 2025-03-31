@@ -20,14 +20,17 @@ sudo bash -c 'apt-get -y install npm git gpsd gpsd-clients chrony >/dev/null 2>&
 # Install RealVNC components
 echo "Installing RealVNC..."
 sudo bash -c 'apt-get -y install realvnc-vnc-server realvnc-vnc-viewer >/dev/null 2>&1 & disown'
+wait
 
 # Install chirp
 echo "Installing CHIRP..."
 sudo bash -c 'apt-get -y install chirp >/dev/null 2>&1 & disown'
+wait
 
 # Install librewolf
 echo "Installing Librewolf browser..."
 sudo bash -c 'apt-get -y install librewolf >/dev/null 2>&1 & disown'
+wait
 
 # Install patwinlink (additional config needed later)
 #echo "Installing PAT Winlink..."
