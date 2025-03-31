@@ -9,8 +9,8 @@ apt update
 apt upgrade
 
 # Install necessary background packages/dependencies
-#echo "Installing required packages..."
-#sudo bash -c 'apt-get -y install npm git gpsd gpsd-clients chrony >/dev/null 2>&1 & disown'
+echo "Installing required packages..."
+sudo bash -c 'apt-get -y install npm git gpsd gpsd-clients chrony >/dev/null 2>&1 & disown'
 
 # Disable USB port power limits
 #echo "Configuring USB port power limits..."
@@ -18,16 +18,16 @@ apt upgrade
 #need to add "usb_max_current_enable=1" under [all]
 
 # Install RealVNC components
-#echo "Installing RealVNC..."
-#sudo bash -c 'apt-get -y install realvnc-vnc-server realvnc-vnc-viewer >/dev/null 2>&1 & disown'
+echo "Installing RealVNC..."
+sudo bash -c 'apt-get -y install realvnc-vnc-server realvnc-vnc-viewer >/dev/null 2>&1 & disown'
 
 # Install chirp
-#echo "Installing CHIRP..."
-#sudo bash -c 'apt-get -y install chirp >/dev/null 2>&1 & disown'
+echo "Installing CHIRP..."
+sudo bash -c 'apt-get -y install chirp >/dev/null 2>&1 & disown'
 
 # Install librewolf
-#echo "Installing Librewolf browser..."
-#sudo bash -c 'apt-get -y install librewolf >/dev/null 2>&1 & disown'
+echo "Installing Librewolf browser..."
+sudo bash -c 'apt-get -y install librewolf >/dev/null 2>&1 & disown'
 
 # Install patwinlink (additional config needed later)
 #echo "Installing PAT Winlink..."
