@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Cameron\\source\\repos\\AREDN-Pi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Cameron\\source\\repos\\AREDN-Pi\\pi_5_setup_script.bash||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:pi_5_setup_script.bash||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Cameron\\Source\\Repos\\AREDN-Pi\\setup-script.bash||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:setup-script.bash||{3B902123-F8A7-4915-9F01-361F908088D0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,12 +23,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "pi_5_setup_script.bash",
-              "DocumentMoniker": "C:\\Users\\Cameron\\source\\repos\\AREDN-Pi\\pi_5_setup_script.bash",
-              "RelativeDocumentMoniker": "pi_5_setup_script.bash",
-              "ToolTip": "C:\\Users\\Cameron\\source\\repos\\AREDN-Pi\\pi_5_setup_script.bash",
-              "RelativeToolTip": "pi_5_setup_script.bash",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAABAAAAAAAAAA==",
+              "Title": "setup-script.bash",
+              "DocumentMoniker": "C:\\Users\\Cameron\\Source\\Repos\\AREDN-Pi\\setup-script.bash",
+              "RelativeDocumentMoniker": "setup-script.bash",
+              "ToolTip": "C:\\Users\\Cameron\\Source\\Repos\\AREDN-Pi\\setup-script.bash",
+              "RelativeToolTip": "setup-script.bash",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-03-31T12:31:10.526Z",
               "EditorCaption": ""

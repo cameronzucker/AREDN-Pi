@@ -8,7 +8,7 @@ echo "Upgrading packages..."
 apt-get upgrade -y >/dev/null 2>&1
 echo "Pulling OS updates..."
 apt update >/dev/null 2>&1
-echo "Upgrading OS"
+echo "Upgrading OS..."
 apt upgrade -y >/dev/null 2>&1
 
 # Install necessary background packages/dependencies
@@ -38,6 +38,7 @@ cd ~
 apt-get install -y wget libhamlib-utils screen >/dev/null 2>&1
 echo "Pulling PAT .deb package from source..."
 wget https://github.com/la5nta/pat/releases/download/v0.16.0/pat_0.16.0_linux_arm64.deb >/dev/null 2>&1
+echo "Running dpkg..."
 dpkg -i pat_0.16.0_linux_arm64.deb >/dev/null 2>&1
 
 # Install docker per official docs: https://docs.docker.com/engine/install/ubuntu/
