@@ -69,6 +69,7 @@ cd /
 cd srv
 
 # Make Docker container folders
+echo "Creating service directories under /srv..."
 mkdir filebrowser mirotalk openspeedtest openwebrx+ statping
 
 # Edit config.txt file to enable PCIe 3.0, then reboots to affect change
