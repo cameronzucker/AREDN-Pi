@@ -18,19 +18,17 @@ sudo bash -c 'apt-get -y install npm git gpsd gpsd-clients chrony >/dev/null 2>&
 #need to add "usb_max_current_enable=1" under [all]
 
 # Install RealVNC components
-echo "Installing RealVNC..."
-sudo bash -c 'apt-get -y install realvnc-vnc-server realvnc-vnc-viewer >/dev/null 2>&1 & disown'
-wait
+#echo "Installing RealVNC..."
+#apt-get -y install realvnc-vnc-server realvnc-vnc-viewer
 
 # Install chirp
 echo "Installing CHIRP..."
-sudo bash -c 'apt-get -y install chirp >/dev/null 2>&1 & disown'
-wait
+apt-get -y install chirp
 
 # Install librewolf
-echo "Installing Librewolf browser..."
-sudo bash -c 'apt-get -y install librewolf >/dev/null 2>&1 & disown'
-wait
+#echo "Installing Librewolf browser..."
+#sudo bash -c 'apt-get -y install librewolf >/dev/null 2>&1 & disown'
+#wait
 
 # Install patwinlink (additional config needed later)
 #echo "Installing PAT Winlink..."
