@@ -3,10 +3,10 @@ echo "AREDN Pi 5 Setup Script"
 
 # Pull and install package updates before starting
 echo "Installing updates..."
-apt-get update >/dev/null 2>&1
-apt-get upgrade -y >/dev/null 2>&1
-apt update >/dev/null 2>&1
-apt upgrade >/dev/null 2>&1
+apt-get update
+apt-get upgrade -y
+apt update
+apt upgrade
 
 # Install necessary background packages/dependencies
 echo "Installing required packages..."
@@ -34,11 +34,11 @@ echo "Installing PAT Winlink..."
 cd ~
 apt-get install -y wget libhamlib-utils screen >/dev/null 2>&1
 echo "Pulling PAT .deb package from source..."
-wget https://github.com/la5nta/pat/releases/download/v0.16.0/pat_0.16.0_linux_arm64.deb
+wget https://github.com/la5nta/pat/releases/download/v0.16.0/pat_0.16.0_linux_arm64.deb >/dev/null 2>&1
 dpkg -i pat_0.16.0_linux_arm64.deb >/dev/null 2>&1
 
 # Install docker per official docs: https://docs.docker.com/engine/install/ubuntu/
-"Removing old/conflicting Docker packages..."
+echo "Removing old/conflicting Docker packages..."
 for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get remove $pkg; done >/dev/null 2>&1
 
 # Add Docker's official GPG key:
