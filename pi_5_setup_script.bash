@@ -54,7 +54,7 @@ apt upgrade
 #sudo apt-get update
 
 # Install docker components
-apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+#apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
 # Change to /srv/ for Docker container installs
 #cd /
