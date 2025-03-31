@@ -12,6 +12,7 @@ echo "Upgrading OS..."
 apt upgrade -y >/dev/null 2>&1
 echo "Installing extrepo..."
 apt-get install extrepo -y
+echo "Updating package list with extrepo..."
 
 # Install necessary background packages/dependencies
 echo "Installing required packages..."
