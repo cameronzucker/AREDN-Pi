@@ -15,5 +15,5 @@ In your home directory, run:
 sudo git clone https://github.com/cameronzucker/aredn-pi-setup.git
 cd aredn-pi-setup
 sudo chmod +x setup-script.bash
-sudo ./setup-script.bash</code>
+sudo ./setup-script.bash
 ```
