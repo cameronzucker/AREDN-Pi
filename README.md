@@ -10,7 +10,9 @@ Scripts are menat to be run with a Pi 5/CM5 (untested) unless otherwise expressl
 Image your Pi 5 with the official Pi imager utility: https://github.com/raspberrypi/rpi-imager<br>
 Use the 64-bit Raspbian option. Configure your account username and password, SSH, and other required settings in customization before you write the image.
 
-Boot your Pi, then SSH in.
+Boot your Pi, then SSH in:
+
+<code>ssh yourUser@yourPi'sIP</code>
 
 In your home directory, run:
 
@@ -24,9 +26,11 @@ sudo ./setup-script.bash
 
 This project is based on the Pi 5 for a few important reasons:
 * Built-in Real Time Clock (RTC) which doens't consume GPIO pins<br>
-* PCIe 3.0 bus for fast network file server storage<br>
+* PCIe 3.0 bus for fast booting, responsive operation, and more robust network file server storage<br>
 * Native support for booting from M.2 SSDs<br>
 * Enough raw performance to plausibly act as a micro server for small numbers of concurrent users
+* Class-leading software support using off-the-shelf Ubuntu distros (as opposed to alternatives like Orange Pi, Radxa, etc.)
+* Excellent performance per Watt
 
 ## Parts List
 
