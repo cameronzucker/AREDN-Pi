@@ -10,6 +10,8 @@ Scripts are menat to be run with a Pi 5/CM5 (untested) unless otherwise expressl
 Image your Pi 5 with the official Pi imager utility: https://github.com/raspberrypi/rpi-imager<br>
 Use the 64-bit Raspbian option. Configure your account username and password, SSH, and other required settings in customization before you write the image.
 
+![raspberry pi imager main setup dialogue](https://github.com/cameronzucker/aredn-pi-setup/blob/main/aredn-pi-github-image-test-screenshot.jpg?raw=true)
+
 Boot your Pi, then SSH in:
 
 ```
