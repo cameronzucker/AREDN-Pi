@@ -15,9 +15,7 @@ Select the Pi 5 and Raspbian 64-bit options. The media will be your adapted M.2 
 
 If the boot media doesn't show up, format it with [Rufus](https://rufus.ie/en/) as a non-bootable disk, then relaunch the imager and try again.
 
-You'll be asked to customize your image. Click yes, then configure as shown here:
-
-![raspberry pi imager main setup dialogue](https://github.com/cameronzucker/aredn-pi-setup/blob/main/images/aredn-pi-imager-OS-customization-1.jpg)
+You'll be asked to customize your image. Click yes, then configure as shown below with your unique hostname, username, password, and time zone. Make sure SSH with password auth is enabled so it can be setup/shelled into from any device, and turn off telemetry at your discretion.
 
 Boot your Pi, then SSH in:
 
