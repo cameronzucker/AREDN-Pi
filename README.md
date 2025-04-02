@@ -76,3 +76,15 @@ This is what I've used:<br>
 Sabrent USB 3.2 Type-C Tool-Free Enclosure for M.2 PCIe NVMe: https://www.amazon.com/dp/B08RVC6F9Y
 
 But, any similar device will work.
+
+## WIP - Onboard GPS
+Including GPS directly on the board frees up a USB port and provides access to much more precise PPS timing. I haven't had a chance to test this on top of the M.2/PoE boards, so it's not included in the script yet.
+
+Waveshare LC29H Series Dual-band GPS Module for Raspberry Pi*: https://www.waveshare.com/lc29h-gps-hat.htm?sku=25278
+
+*Requires an ML1220 rechargeable cell which is not included.
+
+## Future Hardware
+The ideal Pi hat would combine a UPS, PCIe 3.0 NVMe adapter, full 40 pin GPIO passthrough, and 24V *passive* PoE support (most AREDN hardware runs on 24V PoE). I recently found such a part from Pi Modules Technologies in Greece, and will create a branch for it if the hardware does what it says on the tin.
+
+M.2 – UPS and Power Management HAT Advanced/PPoE: https://pimodules.com/product/m-2-ups-and-power-management-hat-advanced-ppoe
