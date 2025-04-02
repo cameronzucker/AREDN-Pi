@@ -30,23 +30,25 @@ This project is based on the Pi 5 for a few important reasons:
 
 ## Parts List
 
-Scripts are intended for the following reference hardware. They will probably work with other parts, but other combinations are untested. Green and bolded line items are the recommended configuration.
+Scripts are intended for the following reference hardware. They will probably work with other parts, but other combinations are untested. Bolded line items are the recommended configuration.
+
+I have no affiliation with any linked vendors, and any particular link is not a directive to buy that part there. Copy your desired SKUs and shop around to combine orders and get the best deal.
 
 ### Base Pis
 * Raspberry Pi 5 8 GB: https://www.pishop.us/product/raspberry-pi-5-8gb/<br>
-* <span style="color: green;">**Raspberry Pi 5 16 GB:**</span> https://www.pishop.us/product/raspberry-pi-5-16gb/
+* **Raspberry Pi 5 16 GB:** https://www.pishop.us/product/raspberry-pi-5-16gb/
 
 ### Combination M.2/PoE hats:
 There are a few PoE hats which will work depending on the desired overall footprint. 2280 form factor SSDs will provide the best performance by using DRAM cache, and are recommended if form factor isn't an issue.
 
 * Waveshare POE M.2 HAT+: https://www.waveshare.com/product/raspberry-pi/hats/poe-m.2-hat-plus.htm<br>
 * 52Pi M.2 NVME M-KEY PoE+ Hat: https://52pi.com/products/m-2-nvme-m-key-poe-hat-with-official-pi-5-active-cooler-for-raspberry-pi-5-support-m-2-nvme-ssd-2230-2242<br>
-* <span style="color: green;">**52Pi P33 M.2 NVMe 2280 PoE+ HAT:**</span> https://52pi.com/products/p33-m-2-nvme-2280-poe-hat-extension-board-for-raspberry-pi-5
+* **52Pi P33 M.2 NVMe 2280 PoE+ HAT:** https://52pi.com/products/p33-m-2-nvme-2280-poe-hat-extension-board-for-raspberry-pi-5
 
 ### Storage
 * For 2230/2242 - Samsung PM991a¹: https://www.amazon.com/dp/B0BDWCC47L<br>
 * 2230/2242 alternate - Official Raspberry Pi NVMe SSD: https://www.pishop.us/product/raspberry-pi-nvme-ssd-512gb/<br>
-* <span style="color: green;">**For 2280 - Crucial P3 Plus 500GB:**</span> https://www.amazon.com/dp/B0B25NTRGD
+* **For 2280 - Crucial P3 Plus 500GB:** https://www.amazon.com/dp/B0B25NTRGD
 
 ¹The PM991a is a high quality SSD which probably outperforms the official Pi 2230 SSD, but since the Pi 5 only offers PCIe 3.0 x1, the real world beneift of the better part may be negligible.
 
@@ -54,14 +56,14 @@ There are a few PoE hats which will work depending on the desired overall footpr
 If the Pi is shutdown or loses power, especially for extended periods, keeping the RTC running and accurate is valuable for expediting redeployment without relying on a GPS fix. While the Pi 5 has a built-in RTC chip, it needs an external battery connected to a dedicated header to supply power.
 
 * Panasonic ML-2020 lithium manganese dioxide rechargeable battery: https://www.pishop.us/product/rtc-battery-for-raspberry-pi-5/<br>
-* <span style="color: green;">**RTCBattery Box Real Time Clock Holder for Pi 5²:**</span> https://www.amazon.com/dp/B0CRKQ2MG1
+* **RTCBattery Box Real Time Clock Holder for Pi 5²:** https://www.amazon.com/dp/B0CRKQ2MG1
 
 ²This option requires you to furnish a common CR2032 battery. This may be preferable due to their abundance if something should happen to the RTC battery. They are also higher capacity than rechargeable options, allowing for extended shutdown standby time (potentially years).
 
 ### Coolers
 These Pis are intended for remote deployment in hot Southwest desert conditions and require active cooling. The following are known to work well:
 
-* <span style="color: green;">**Official Raspberry Pi 5 Active Cooler:**</span> https://www.amazon.com/dp/B0CZLPX2HC<br>
+* **Official Raspberry Pi 5 Active Cooler:** https://www.amazon.com/dp/B0CZLPX2HC<br>
 * GeeekPi Active Cooler for Raspberry Pi 5: https://www.amazon.com/dp/B0CNVFCWQR
 
 ### Cases
