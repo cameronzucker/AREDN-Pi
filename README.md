@@ -12,7 +12,9 @@ Use the 64-bit Raspbian option. Configure your account username and password, SS
 
 Boot your Pi, then SSH in:
 
-<code>ssh yourUser@yourPi'sIP</code>
+```
+ssh yourUsername@yourPi'sIP
+```
 
 In your home directory, run:
 
