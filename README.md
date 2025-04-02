@@ -43,24 +43,26 @@ There are a few PoE hats which will work depending on the desired overall footpr
 
 * Waveshare POE M.2 HAT+: https://www.waveshare.com/product/raspberry-pi/hats/poe-m.2-hat-plus.htm<br>
 * 52Pi M.2 NVME M-KEY PoE+ Hat: https://52pi.com/products/m-2-nvme-m-key-poe-hat-with-official-pi-5-active-cooler-for-raspberry-pi-5-support-m-2-nvme-ssd-2230-2242<br>
-* **52Pi P33 M.2 NVMe 2280 PoE+ HAT:** https://52pi.com/products/p33-m-2-nvme-2280-poe-hat-extension-board-for-raspberry-pi-5
+* **52Pi P33 M.2 NVMe 2280 PoE+ HAT†:** https://52pi.com/products/p33-m-2-nvme-2280-poe-hat-extension-board-for-raspberry-pi-5
+
+†This hat also provides 3.3/5/12V out on six pins (one hot for each voltage with adjacent ground), which is potentially useful for powering other small devices.
 
 ### Storage
 This project makes use of M.2 drives for their quantum leap in speed and reliability over Micro SD cards. Since these Pis will be used as web application servers, including a file serve function which incurs frequent writes, this is an important factor and worth the relatively minor price increase. 2230/2242 drives are more expensive than larger 2280 drives and have worse sustained performance due to lacking DRAM cache, but they'll fit in smaller cases. The only thing precluding the use of truly robust enterprise SATA SSDs like the Intel P4610 is lack of boot support.
 
 * For 2230/2242 - Samsung PM991a¹: https://www.amazon.com/dp/B0BDWCC47L<br>
 * 2230/2242 alternate - Official Raspberry Pi NVMe SSD: https://www.pishop.us/product/raspberry-pi-nvme-ssd-512gb/<br>
-* **For 2280 - Crucial P3 Plus 500GB:** https://www.amazon.com/dp/B0B25NTRGD
+* **For 2280 - Crucial P3 Plus 500GB†:** https://www.amazon.com/dp/B0B25NTRGD
 
-¹The PM991a is a high quality SSD which probably outperforms the official Pi 2230 SSD, but since the Pi 5 only offers PCIe 3.0 x1, the real world beneift of the better part may be negligible.
+†The PM991a is a high quality SSD which probably outperforms the official Pi 2230 SSD, but since the Pi 5 only offers PCIe 3.0 x1, the real world beneift of the better part may be negligible.
 
 ### RTC Battery Backup
 If the Pi is shutdown or loses power, especially for extended periods, keeping the RTC running and accurate is valuable for expediting redeployment without relying on a GPS fix. While the Pi 5 has a built-in RTC chip, it needs an external battery connected to a dedicated header to supply power.
 
 * Panasonic ML-2020 lithium manganese dioxide rechargeable battery: https://www.pishop.us/product/rtc-battery-for-raspberry-pi-5/<br>
-* **RTCBattery Box Real Time Clock Holder for Pi 5²:** https://www.amazon.com/dp/B0CRKQ2MG1
+* **RTCBattery Box Real Time Clock Holder for Pi 5†:** https://www.amazon.com/dp/B0CRKQ2MG1
 
-²This option requires you to furnish a common CR2032 battery. This may be preferable due to their abundance if something should happen to the RTC battery. They are also higher capacity than rechargeable options, allowing for extended shutdown standby time (potentially years).
+†This option requires you to furnish a common CR2032 battery. This may be preferable due to their abundance if something should happen to the RTC battery. They are also higher capacity than rechargeable options, allowing for extended shutdown standby time (potentially years).
 
 ### Coolers
 These Pis are intended for remote deployment in hot Southwest desert conditions and require active cooling. The following are known to work well:
@@ -88,9 +90,9 @@ But, any similar device will work.
 ## WIP - Onboard GPS
 Including GPS directly on the board frees up a USB port and provides access to much more precise PPS timing. I haven't had a chance to test this on top of the M.2/PoE boards, so it's not included in the script yet.
 
-* Waveshare LC29H Series Dual-band GPS Module for Raspberry Pi³: https://www.waveshare.com/lc29h-gps-hat.htm?sku=25278
+* Waveshare LC29H Series Dual-band GPS Module for Raspberry Pi†: https://www.waveshare.com/lc29h-gps-hat.htm?sku=25278
 
-³Requires an ML1220 rechargeable cell which is not included.
+†Requires an ML1220 rechargeable cell which is not included.
 
 ## Future Hardware
 The ideal Pi hat would combine a UPS, PCIe 3.0 NVMe adapter, full 40 pin GPIO passthrough, and 24V *passive* PoE support (most AREDN hardware runs on 24V PoE). I recently found such a part from Pi Modules Technologies in Greece, and will create a branch for it if the hardware does what it says on the tin.
