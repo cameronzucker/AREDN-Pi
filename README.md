@@ -17,6 +17,8 @@ If the boot media doesn't show up, format it with [Rufus](https://rufus.ie/en/) 
 
 You'll be asked to customize your image. Click yes, then configure as shown below with your unique hostname, username, password, and time zone. Make sure SSH with password auth is enabled so it can be setup/shelled into from any device, and turn off telemetry at your discretion.
 
+![raspberry pi imager OS customization dialogue](https://github.com/cameronzucker/aredn-pi-setup/blob/main/images/aredn-pi-imager-OS-customization-composite.jpg)
+
 Boot your Pi, then SSH in:
 
 ```
