@@ -54,7 +54,7 @@ There are a few PoE hats which will work depending on the desired overall footpr
 †This hat also provides 3.3/5/12V out on six pins (one hot for each voltage with adjacent ground), which is potentially useful for powering other small devices.
 
 ### Storage
-This project makes use of M.2 drives for their quantum leap in speed and reliability over Micro SD cards. Since these Pis will be used as web application servers, including a file serve function which incurs frequent writes, this is an important factor and worth the relatively minor price increase. 2230/2242 drives are more expensive than larger 2280 drives and have worse sustained performance due to lacking DRAM cache, but they'll fit in smaller cases. The only thing precluding the use of truly robust enterprise SATA SSDs like the Intel P4610 is lack of boot support.
+This project makes use of M.2 drives for their quantum leap in speed and reliability over Micro SD cards. Since these Pis will be used as web application servers, including a file serve function which incurs frequent writes, this is an important factor and worth the relatively minor price increase. 2230/2242 drives are more expensive than larger 2280 drives and have worse sustained performance due to lacking DRAM cache, but they'll fit in smaller cases. The obstacle precluding use of truly robust enterprise SATA SSDs like the Intel P4610 is lack of boot support.
 
 * For 2230/2242 - Samsung PM991a†: https://www.amazon.com/dp/B0BDWCC47L<br>
 * 2230/2242 alternate - Official Raspberry Pi NVMe SSD: https://www.pishop.us/product/raspberry-pi-nvme-ssd-512gb/<br>
