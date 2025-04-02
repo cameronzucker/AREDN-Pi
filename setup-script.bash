@@ -26,6 +26,8 @@ apt-get -y install npm git gpsd gpsd-clients chrony >/dev/null 2>&1
 # Install RealVNC components
 echo "Installing RealVNC..."
 apt-get -y install realvnc-vnc-server realvnc-vnc-viewer >/dev/null 2>&1
+#dpkg -s realvnc-vnc-server
+#dpkg -s realvnc-vnc-viewer
 
 # Install chirp
 echo "Installing CHIRP..."
