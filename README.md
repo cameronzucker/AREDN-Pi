@@ -79,9 +79,9 @@ These Pis are intended for remote deployment in hot Southwest desert conditions 
 ### Cases
 There is some room for creativity here depending on whether additional hats on top of the M.2/PoE hat are desired. The choice will come down to personal preference.
 
-* 52Pi makes a first party ABS case which fits their hat with some room to spare: https://52pi.com/collections/cases/products/case-for-raspberry-pi-5?variant=43067599749272<br>
+* 52Pi makes a first party aluminum/acrylic case which fits their hat with some room to spare: https://52pi.com/collections/cases/products/case-for-raspberry-pi-5?variant=43067599749272<br>
 
-However, a metal case offers protection against RFI, which may be desirable in a radio-oriented environment. Geekworm makes some which fit their NVMe hats, which have the same footprint as full length M.2/PoE hats:
+However, an all-metal case offers better protection against RFI, which may be desirable in a radio-oriented environment. Geekworm makes some which fit their NVMe hats, which have the same footprint as 52Pi full length M.2/PoE hats:
 
 * Geekworm P579: https://geekworm.com/products/p579
 
