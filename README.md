@@ -7,9 +7,9 @@ Scripts are menat to be run with a Pi 5/CM5 (untested) unless otherwise expressl
 
 ***Please note that the script is still under construction and is not ready for deployment!***
 
-Image your Pi 5 with the official Pi imager utility: https://github.com/raspberrypi/rpi-imager
+Image your Pi 5 boot media with the official Pi imager utility: https://github.com/raspberrypi/rpi-imager
 
-Select the Pi 5 and Raspbian 64-bit options. The media will be your adapted M.2 drive or other boot media.
+Select the Pi 5 and Raspbian 64-bit options. The media will be your USB-adapted M.2 drive (or other boot media).
 
 ![raspberry pi imager main setup dialogue](https://github.com/cameronzucker/aredn-pi-setup/blob/main/images/aredn-pi-imager-setup-main.jpg)
 
