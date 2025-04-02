@@ -56,7 +56,7 @@ If the Pi is shutdown or loses power, especially for extended periods, keeping t
 * Panasonic ML-2020 lithium manganese dioxide rechargeable battery: https://www.pishop.us/product/rtc-battery-for-raspberry-pi-5/<br>
 * **RTCBattery Box Real Time Clock Holder for Pi 5²:** https://www.amazon.com/dp/B0CRKQ2MG1
 
-²This option requires you to furnish a common CR2032 battery. This may be preferable due to their abundance if something should happen to the RTC battery, and they are higher capacity than rechargeable options, allowing for longer shutdown standby time.
+²This option requires you to furnish a common CR2032 battery. This may be preferable due to their abundance if something should happen to the RTC battery. They are also higher capacity than rechargeable options, allowing for extended shutdown standby time (potentially years).
 
 ### Coolers
 These Pis are intended for remote deployment in hot Southwest desert conditions and require active cooling. The following are known to work well:
