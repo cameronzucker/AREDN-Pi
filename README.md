@@ -39,13 +39,15 @@ I have no affiliation with any linked vendors, and any particular link is not a 
 * **Raspberry Pi 5 16 GB:** https://www.pishop.us/product/raspberry-pi-5-16gb/
 
 ### Combination M.2/PoE hats:
-There are a few PoE hats which will work depending on the desired overall footprint. 2280 form factor SSDs will provide the best performance by using DRAM cache, and are recommended if form factor isn't an issue.
+There are a few PoE hats which will work depending on the desired overall footprint. 2280 drives are recommended if form factor isn't an issue.
 
 * Waveshare POE M.2 HAT+: https://www.waveshare.com/product/raspberry-pi/hats/poe-m.2-hat-plus.htm<br>
 * 52Pi M.2 NVME M-KEY PoE+ Hat: https://52pi.com/products/m-2-nvme-m-key-poe-hat-with-official-pi-5-active-cooler-for-raspberry-pi-5-support-m-2-nvme-ssd-2230-2242<br>
 * **52Pi P33 M.2 NVMe 2280 PoE+ HAT:** https://52pi.com/products/p33-m-2-nvme-2280-poe-hat-extension-board-for-raspberry-pi-5
 
 ### Storage
+This project makes use of M.2 drives for their quantum leap in speed and reliability over Micro SD cards. Since these Pis will be used as web application servers, including a file serve function which incurs frequent writes, this is an important factor and worth the relatively minor price increase. 2230/2242 drives are more expensive than larger 2280 drives and have worse sustained performance due to lacking DRAM cache, but they'll fit in smaller cases. The only thing precluding the use of truly robust enterprise SATA SSDs like the Intel P4610 is lack of boot support.
+
 * For 2230/2242 - Samsung PM991a¹: https://www.amazon.com/dp/B0BDWCC47L<br>
 * 2230/2242 alternate - Official Raspberry Pi NVMe SSD: https://www.pishop.us/product/raspberry-pi-nvme-ssd-512gb/<br>
 * **For 2280 - Crucial P3 Plus 500GB:** https://www.amazon.com/dp/B0B25NTRGD
