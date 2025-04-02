@@ -7,10 +7,18 @@ Scripts are menat to be run with a Pi 5/CM5 (untested) unless otherwise expressl
 
 ***Please note that the script is still under construction and is not ready for deployment!***
 
-Image your Pi 5 with the official Pi imager utility: https://github.com/raspberrypi/rpi-imager<br>
-Use the 64-bit Raspbian option. Configure your account username and password, SSH, and other required settings in customization before you write the image.
+Image your Pi 5 with the official Pi imager utility: https://github.com/raspberrypi/rpi-imager
 
-![raspberry pi imager main setup dialogue](https://github.com/cameronzucker/aredn-pi-setup/blob/main/images/aredn-pi-github-image-test-screenshot.jpg)
+Select the Pi 5 and Raspbian 64-bit options. The media will be your adapted M.2 drive or other boot media.
+
+![raspberry pi imager main setup dialogue](https://github.com/cameronzucker/aredn-pi-setup/blob/main/images/aredn-pi-imager-setup-main.jpg)
+
+If the boot media doesn't show up, format it with [Rufus](https://rufus.ie/en/) as a non-bootable disk, then relaunch the imager and try again.
+
+You'll be asked to customize your image. Click yes, then configure as shown here:
+
+![raspberry pi imager main setup dialogue](https://github.com/cameronzucker/aredn-pi-setup/blob/main/images/aredn-pi-imager-OS-customization-1.jpg)
+
 Boot your Pi, then SSH in:
 
 ```
